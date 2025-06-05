@@ -13,6 +13,9 @@ print(sales_series['grapes'])
 total_sales = sales_series.sum()
 print(total_sales)
 
+best_selling_product = sales_series.idxmax()
+print(f"Best selling product: {best_selling_product}")
+
 data = {'Name:': ['lisa', 'medina', 'medinaa'],
         'Age': [25,80,62],
         'City': ['Prishtine', 'Gillani', 'Peje']
@@ -24,5 +27,4 @@ print(df)
 #df = pd.read_csv('cs.csv')
 #df.to_csv('output_database.csv', index = False)
 
-best_selling_product = sales_series.idxmax()
-print(f"Best selling product: {best_selling_product}")
+
